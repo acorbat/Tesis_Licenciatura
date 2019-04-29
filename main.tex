@@ -1,0 +1,107 @@
+\documentclass[a4paper,11pt,twoside,openright]{report} 
+\input{Settings.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\pagenumbering{roman}
+
+%%%%%%%%%%%%%%%%    Carátula   %%%%%%%%%%%%%%%%%%
+\input{./tex/Caratula.tex}
+
+
+%%%%%%%%%%%%%%%%   Resumen    %%%%%%%%%%%%%%%%%%%
+\cleardoublepage
+
+
+\input{./tex/Resumen.tex}
+\setcounter{page}{6}
+
+
+%%%%%%%%%%%%%%%%   Frase    %%%%%%%%%%%%%%%%%%%%
+\cleardoublepage
+
+
+\vspace*{15cm}
+
+\begin{flushright}
+    \textit{To measure what is measurable\\
+    and make measurable what is not...}
+    
+    \textbf{Galileo Galilei}
+\end{flushright}
+
+%%%%%%%%%%%%%%%%   Índice    %%%%%%%%%%%%%%%%%%%%
+\cleardoublepage
+
+\tableofcontents
+
+%%%%%%%%%%%%%%%    Documento   %%%%%%%%%%%%%%%%%%
+\cleardoublepage
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+%%%%%%%%%  Introduccion
+\input{./tex/Introduccion.tex}
+
+
+%%%%%%%%%  Microscopia
+\input{./tex/Microscopia.tex}
+
+
+%%%%%%%%%  Modelado
+\input{./tex/Modelo.tex}
+
+
+%%%%%%%%%  Información Biológica
+\input{./tex/Informacion.tex}
+
+
+%%%%%%%%%  Conclusión
+\input{./tex/Conclusion.tex}
+
+
+%%%%%%%%%  Agradecimientos
+\setcounter{page}{1}
+\pagenumbering{roman}
+\thispagestyle{empty}
+\input{./tex/Agradecimientos.tex}
+
+%%%%%%%%%%%%%%   Referencias   %%%%%%%%%%%%%%%%%%%%%%%%%%
+\cleardoublepage
+\bibliography{./Referencias.bib}
+\bibliographystyle{ieeetr}
+
+%\begin{figure}[H]
+%    \centering
+%    \includegraphics[width=0.49\textwidth]{resistencia.jpg}
+%    \caption{\footnotesize{Valores de resistencia de la muestra en %función de la temperatura.}}  
+%    \label{figResistencia}
+%\end{figure}
+
+
+%\begin{figure}[H]
+%    \begin{subfigure}{0.49\textwidth}
+%            \includegraphics[width=0.99\textwidth]{zoom2.jpg}
+%            \caption{\footnotesize{Valores obtenidos de resistencia en %función de temperatura en un rango de $82.2$ °K a $82.8$ °K.}}
+%            \label{figZoom2}
+%    \end{subfigure}
+%    
+%    \begin{subfigure}{0.49\textwidth}
+%       \includegraphics[width=0.99\textwidth]{fase2.jpg}
+%        \caption{\footnotesize{Valores de fase obtenidos en función de %temperatura en un rango de $82.2$ °K a $82.8$ °K.}}
+%        \label{figFase2}
+%    \end{subfigure}
+%
+%    \caption{\footnotesize{Detalle de resistencia y fase medidas para la región de interes de $82.2$ °K a $82.8$ °K.}}
+%    \label{figZona2}
+%\end{figure}
+
+
+%\begin{thebibliography}{10}
+
+
+%\end{thebibliography}
+
+
+\end{document}
